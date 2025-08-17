@@ -5,9 +5,6 @@ from graphene_django import DjangoObjectType
 from .models import Customer, Product, Order
 from .mutations import CreateCustomer, BulkCreateCustomers, CreateProduct, CreateOrder
 
-class Query(graphene.ObjectType):
-    hello = graphene.String(default_value="Hello, GraphQL!")  # optional test field
-
 class Mutation(graphene.ObjectType):
     create_customer = CreateCustomer.Field()
     bulk_create_customers = BulkCreateCustomers.Field()
