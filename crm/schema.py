@@ -2,7 +2,7 @@ import graphene
 from graphene_django import DjangoObjectType
 # from django.core.exceptions import ValidationError
 # from django.db import transaction
-from crm.models import Customer, Product, Order
+from .models import Customer, Product, Order
 from .mutations import CreateCustomer, BulkCreateCustomers, CreateProduct, CreateOrder
 
 class Query(graphene.ObjectType):
