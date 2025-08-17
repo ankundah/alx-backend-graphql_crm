@@ -1,0 +1,1 @@
+Practicing graphql in django
